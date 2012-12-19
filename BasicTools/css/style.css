@@ -1,0 +1,242 @@
+/* 
+    Document   : style
+    Created on : Jan 11, 2010, 12:19:12 PM
+    Author     : damola
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+
+
+#header{
+    margin-top: 0px;
+    background: url(eggplant/images/header.png);
+    background-image:url(img/warning.png);
+
+    height: 40px; top: 0px;
+    color: white;
+    padding-bottom: 3px;
+    margin-bottom: 1px;
+    -moz-border-radius-topleft:7px;
+    -moz-border-radius-topright:7px;
+}
+
+#header-title{
+    float: left;
+    padding-top: 6px;
+    padding-left: 6px;
+    font-size: 1em;
+    display: block;
+    font-weight: bold;
+}
+
+#header-title a{
+    font-size: 2em;
+}
+
+#header-right-text{
+   
+}
+
+#header-right{
+    background: url(css/eggplant/images/ui-bg_flat_0_eeeeee_40x100.png);
+    float: right;
+    margin-right: 30px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+    padding-right: 3px;
+ 
+}
+#footer{
+    background: url(eggplant/images/header.png);
+    margin-top: 1px;
+    height: 40px; top: 0px;
+    color: white;
+    -moz-border-radius-bottomright: 6px;
+    -moz-border-radius-bottomleft: 6px;
+}
+
+#footer-text{
+    padding-top: 10px; padding-left: 480px;
+}
+
+#button-style{
+ background:#DCD9DE url(eggplant/images/ui-bg_highlight-soft_100_dcd9de_1x100.png) repeat-x scroll 50% 50%; -moz-border-radius-bottomleft:20px;
+-moz-border-radius-bottomright:20px;
+-moz-border-radius-topleft:20px;
+-moz-border-radius-topright:20px;
+color:#665874;
+border-style:none;
+}
+
+#button-style2{
+ background:#DCD9DE url(eggplant/images/header.png) repeat-x scroll 50% 50%; -moz-border-radius-bottomleft:20px;
+-moz-border-radius-bottomright:20px;
+-moz-border-radius-topleft:20px;
+-moz-border-radius-topright:20px;
+color:#DCD9DE;
+border-style:none;
+}
+
+#top-menu-right{
+    background: url(css/eggplant/images/ui-bg_flat_0_eeeeee_40x100.png);
+    float: right;
+    margin-right: 30px;
+    padding-left: 1px;
+    padding-bottom: 1px;
+        padding-right: 1px;
+        -moz-border-radius-bottomleft:6px;
+    -moz-border-radius-bottomright:6px;
+}
+
+#top-menu {
+
+-moz-border-radius-bottomleft:6px;
+-moz-border-radius-bottomright:6px;
+-moz-border-radius-topleft:6px;
+-moz-border-radius-topright:6px;
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background: url(eggplant/images/ui-bg_highlight-soft_25_30273a_1x100.png) repeat-x scroll 50% 50%;
+border:1px solid #231D2B;
+color:#FFFFFF;
+font-weight:bold;
+padding-bottom: 24px; padding-top: 2px;
+}
+
+#table-top-menu {
+
+-moz-border-radius-bottomleft:6px;
+-moz-border-radius-bottomright:6px;
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+/*background: url(eggplant/images/ui-bg_glass_45_0078ae_1x400.png) repeat-x scroll 50% 50%;
+*/border:1px solid #231D2B;
+color:#FFFFFF;
+font-weight:bold;
+padding-bottom: 24px; padding-top: 2px;
+}
+
+#top-menu-list{
+border-bottom-width:0 !important;
+float:left;
+margin:0 0.2em -1px 0;
+padding:0;
+position:relative;
+-moz-border-radius-topleft:6px;
+-moz-border-radius-topright:6px;
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#DCD9DE url(eggplant/images/ui-bg_highlight-soft_100_dcd9de_1x100.png) repeat-x scroll 50% 50%;
+border:1px solid #DCD9DE;
+color:#665874;
+font-weight:bold;
+outline-color: -moz-use-text-color;
+outline-style:none;
+outline-width:medium;
+margin-left: 3px;
+}
+
+#top-menu-list-selected{
+border-bottom-width:0 !important;
+float:left;
+margin:0 0.2em -1px 0;
+padding:0;
+position:relative;
+-moz-border-radius-topleft:6px;
+-moz-border-radius-topright:6px;
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#DCD9DE url(eggplant/images/header.png) repeat-x scroll 50% 50%;
+border:1px solid #DCD9DE;
+color:#FFFFFF;
+font-weight:bold;
+outline-color: -moz-use-text-color;
+outline-style:none;
+outline-width:medium;
+margin-left: 3px;
+}
+
+#top-menu-list-a{
+float:left;
+padding:0.5em 1em;
+text-decoration:none;
+cursor:pointer;
+}
+
+#demo_jui {
+	margin: 1px auto 0 auto;
+}
+
+
+
+label{
+float: left;
+width: 120px;
+font-weight: bold;
+}
+
+textarea{
+width: 250px;
+height: 150px;
+}
+
+
+#response {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#EDF1F3 none repeat scroll 0 50%;
+border:1px solid #EEEEEE;
+padding:8px;
+}
+
+h3 {
+border-bottom:1px solid #EEEEEE;
+color:#587C02;
+font-family:Tahoma,Sans MS,serif;
+font-size:14px;
+font-weight:normal;
+line-height:1.5em;
+margin:0 0 10px;
+}
+
+.comment_web_input {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#FFFFFF url(../images/fade.jpg) repeat-x scroll left bottom;
+border:1px solid #6CA6CD;
+font-family:arial;
+font-size:12px;
+margin:2px;
+padding:2px;
+width:96%;
+}
+
+fieldset {
+border:medium none;
+}
+
+input{
+    padding-bottom: 3px;
+    margin-bottom: 3px;
+}
+
+select{
+   padding-bottom: 3px;
+   margin-bottom: 3px;
+}

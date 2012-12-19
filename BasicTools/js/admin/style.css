@@ -1,0 +1,444 @@
+/* 
+    Document   : style
+    Created on : Jan 11, 2010, 12:19:12 PM
+    Author     : damola
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+
+
+#header{
+    margin-top: 0px;
+    background: url(../css/dark-hive/images/ui-bg_highlight-hard_20_0972a5_1x100.png);
+    height: 40px; top: 0px;
+    color: white;
+    padding-bottom: 3px;
+    margin-bottom: 1px;
+    -moz-border-radius-topleft:7px;
+    -moz-border-radius-topright:7px;
+}
+
+#header-title{
+    float: left;
+    padding-top: 6px;
+    padding-left: 6px;
+    font-size: 1em;
+    display: block;
+    font-weight: bold;
+}
+
+#header-title a{
+    font-size: 2em;
+}
+
+#header-right-text{
+   
+}
+
+#header-right{
+    background: url(css/eggplant/images/ui-bg_flat_0_eeeeee_40x100.png);
+    float: right;
+    margin-right: 30px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+    padding-right: 3px;
+ 
+}
+#footer{
+    background: url(../css/dark-hive/images/ui-bg_highlight-hard_20_0972a5_1x100.png);
+    margin-top: 1px;
+    height: 40px; top: 0px;
+    color: white;
+    -moz-border-radius-bottomright: 6px;
+    -moz-border-radius-bottomleft: 6px;
+}
+
+#footer-text{
+    padding-top: 10px; padding-left: 480px;
+}
+
+#button-style{
+ background:#DCD9DE url(../css/dark-hive/images/ui-bg_highlight-soft_35_222222_1x100.png) repeat-x scroll 50% 50%; -moz-border-radius-bottomleft:20px;
+-moz-border-radius-bottomright:20px;
+-moz-border-radius-topleft:20px;
+-moz-border-radius-topright:20px;
+color: white;
+border-style:none;
+}
+
+#button-style2{
+ background:#DCD9DE url(../css/dark-hive/images/ui-bg_highlight-soft_33_003147_1x100.png) repeat-x scroll 50% 50%; -moz-border-radius-bottomleft:20px;
+-moz-border-radius-bottomright:20px;
+-moz-border-radius-topleft:20px;
+-moz-border-radius-topright:20px;
+color: white;
+border-style:none;
+border: 1px solid #000000;
+}
+
+#button-style3{
+ background:#DCD9DE url(../css/dark-hive/images/ui-bg_highlight-soft_44_444444_1x100.png) repeat-x scroll 50% 50%; 
+ -moz-border-radius-bottomleft:4px;
+-moz-border-radius-bottomright:4px;
+-moz-border-radius-topleft:4px;
+-moz-border-radius-topright:4px;
+height: 30px;
+color: white;
+border-style:none;
+/*width: 196px;*/
+padding-top: 7px;
+margin-top: 2px;
+}
+
+#button-style3-selected{
+ background:#DCD9DE url(../css/dark-hive/images/ui-bg_highlight-soft_33_003147_1x100.png) repeat-x scroll 50% 50%;
+ -moz-border-radius-bottomleft:4px;
+-moz-border-radius-bottomright:4px;
+-moz-border-radius-topleft:4px;
+-moz-border-radius-topright:4px;
+height: 30px;
+color: white;
+border-style:none;
+border: 1px solid #26B3F7;
+/*width: 196px;*/
+padding-top: 7px;
+margin-top: 2px;
+}
+
+#button-style3:hover{
+    background:#DCD9DE url(../css/dark-hive/images/ui-bg_highlight-soft_33_003147_1x100.png) repeat-x scroll 50% 50%;
+    border: 1px solid #26B3F7;
+}
+
+
+
+#top-menu-right{
+    background: url(css/eggplant/images/ui-bg_flat_0_eeeeee_40x100.png);
+    float: right;
+    margin-right: 30px;
+    padding-left: 1px;
+    padding-bottom: 1px;
+        padding-right: 1px;
+        -moz-border-radius-bottomleft:6px;
+    -moz-border-radius-bottomright:6px;
+}
+
+#top-menu {
+
+-moz-border-radius-bottomleft:6px;
+-moz-border-radius-bottomright:6px;
+-moz-border-radius-topleft:6px;
+-moz-border-radius-topright:6px;
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background: url(../css/dark-hive/images/ui-bg_highlight-soft_44_444444_1x100.png) repeat-x scroll 50% 50%;
+border:1px solid #231D2B;
+color:#FFFFFF;
+font-weight:bold;
+padding-bottom: 24px; padding-top: 2px;
+}
+
+#table-top-menu {
+
+-moz-border-radius-bottomleft:6px;
+-moz-border-radius-bottomright:6px;
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background: url(../css/dark-hive/images/ui-bg_highlight-hard_20_0972a5_1x100.png) repeat-x scroll 50% 50%;
+border:1px solid #231D2B;
+color:#FFFFFF;
+font-weight:bold;
+padding-bottom: 24px; padding-top: 2px;
+}
+
+#top-menu-list{
+border-bottom-width:0 !important;
+float:left;
+margin:0 0.2em -1px 0;
+padding:0;
+position:relative;
+-moz-border-radius-topleft:6px;
+-moz-border-radius-topright:6px;
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#DCD9DE url(../css/dark-hive/images/ui-bg_highlight-soft_35_222222_1x100.png) repeat-x scroll 50% 50%;
+border:1px solid black;
+color: white;
+font-weight:bold;
+outline-color: -moz-use-text-color;
+outline-style:none;
+outline-width:medium;
+margin-left: 3px;
+}
+
+#top-menu-list:hover{
+   background:#DCD9DE url(../css/dark-hive/images/ui-bg_highlight-soft_33_003147_1x100.png) repeat-x scroll 50% 50%;
+   border: 1px solid #26B3F7;
+
+}
+
+#top-menu-list-selected{
+border-bottom-width:0 !important;
+float:left;
+margin:0 0.2em -1px 0;
+padding:0;
+position:relative;
+-moz-border-radius-topleft:6px;
+-moz-border-radius-topright:6px;
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#DCD9DE url(../css/dark-hive/images/ui-bg_highlight-hard_20_0972a5_1x100.png) repeat-x scroll 50% 50%;
+border:1px solid #444444;
+color:#FFFFFF;
+font-weight:bold;
+outline-color: -moz-use-text-color;
+outline-style:none;
+outline-width:medium;
+margin-left: 3px;
+}
+
+#top-menu-list-selected:hover{
+  background:#DCD9DE url(../css/dark-hive/images/ui-bg_highlight-soft_33_003147_1x100.png) repeat-x scroll 50% 50%;
+  border: 1px solid #26B3F7;
+}
+
+#top-menu-list-a{
+float:left;
+padding:0.5em 1em;
+text-decoration:none;
+color: white;
+cursor:pointer;
+}
+
+#demo_jui {
+	margin: 1px auto 0 auto;
+}
+
+
+
+label{
+float: left;
+width: 120px;
+font-weight: bold;
+}
+
+textarea{
+width: 250px;
+height: 150px;
+}
+
+
+#response {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#EDF1F3 none repeat scroll 0 50%;
+border:1px solid #EEEEEE;
+padding:8px;
+}
+
+h3 {
+border-bottom:1px solid #EEEEEE;
+color:#0972A5;
+font-family:Tahoma,Sans MS,serif;
+font-size:14px;
+font-weight:normal;
+line-height:1.5em;
+margin:0 0 10px;
+}
+
+.comment_web_input {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#FFFFFF url(../images/fade.jpg) repeat-x scroll left bottom;
+border:1px solid #6CA6CD;
+font-family:arial;
+font-size:12px;
+margin:2px;
+padding:2px;
+width:96%;
+}
+
+fieldset {
+border:medium none;
+}
+
+input{
+    padding-bottom: 3px;
+    margin-bottom: 3px;
+}
+
+input[type=submit],input[type=reset]{
+ background:#DCD9DE url(../css/dark-hive/images/ui-bg_highlight-soft_33_003147_1x100.png) repeat-x scroll 50% 50%; -moz-border-radius-bottomleft:20px;
+-moz-border-radius-bottomright:20px;
+-moz-border-radius-topleft:20px;
+-moz-border-radius-topright:20px;
+color: white;
+border-style:none;
+border: 1px solid #000000;
+}
+
+select{
+   padding-bottom: 3px;
+   margin-bottom: 3px;
+   width: 256px;
+}
+
+label{
+    color: white;
+}
+
+#left {
+float:left;
+width:18%;
+margin-top: 1px;
+}
+
+#right {
+float:left;
+width:82%;
+
+}
+
+
+
+p {
+  line-height: 1.5em;
+}
+
+ul#menu, ul#menu ul {
+
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+    -moz-border-radius-bottomleft:6px;
+-moz-border-radius-bottomright:6px;
+-moz-border-radius-topleft:6px;
+-moz-border-radius-topright:6px;
+-moz-background-clip:border;
+
+border: 1px;
+}
+
+#menu-main{
+background: url(../css/dark-hive/images/ui-bg_loop_25_000000_21x21.png);
+ -moz-border-radius-bottomleft:6px;
+-moz-border-radius-bottomright:6px;
+-moz-border-radius-topleft:6px;
+-moz-border-radius-topright:13px;
+-moz-background-clip:border;
+}
+
+ul#menu a {
+  display: block;
+  text-decoration: none;
+}
+
+ul#menu li {
+  margin-top: 1px;
+  
+}
+
+ul#menu li ul li a#selected{
+background:#DCD9DE url(../css/dark-hive/images/ui-bg_highlight-soft_33_003147_1x100.png) repeat-x scroll 50% 50%;
+color:white;
+/*background:#DCD9DE url(../css/dark-hive/images/ui-bg_highlight-hard_20_0972a5_1x100.png) repeat-x scroll 50% 50%;*/
+}
+ul#menu li a#selected{
+background:#DCD9DE url(../css/dark-hive/images/ui-bg_highlight-soft_33_003147_1x100.png) repeat-x scroll 50% 50%;
+color:white;
+/*background:#DCD9DE url(../css/dark-hive/images/ui-bg_highlight-hard_20_0972a5_1x100.png) repeat-x scroll 50% 50%;*/
+}
+
+ul#menu li a {
+  background:#DCD9DE url(../css/dark-hive/images/ui-bg_highlight-soft_35_222222_1x100.png) repeat-x scroll 50% 50%;
+  color: #fff;
+  
+  padding: 7px;
+}
+
+ul#menu li a:hover {
+  background:#DCD9DE url(../css/dark-hive/images/ui-bg_highlight-soft_33_003147_1x100.png) repeat-x scroll 50% 50%;
+   border: 1px solid #26B3F7;
+}
+
+ul#menu li ul li a {
+  background: #ccc;
+  color: #000;
+  padding-left: 20px;
+}
+
+ul#menu li ul li a:hover {
+   background:#DCD9DE url(../css/dark-hive/images/ui-bg_highlight-soft_33_003147_1x100.png) repeat-x scroll 50% 50%;
+   border: 1px solid #26B3F7;
+   color: white;
+}
+
+.code { border: 1px solid #ccc; list-style-type: decimal-leading-zero; padding: 5px; margin: 0; }
+.code code { display: block; padding: 3px; margin-bottom: 0; }
+.code li { background: #ddd; border: 1px solid #ccc; margin: 0 0 2px 2.2em; }
+.indent1 { padding-left: 1em; }
+.indent2 { padding-left: 2em; }
+
+
+#login{
+    display: block;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 305px;
+    margin-left: 390px;
+    margin-top: 180px;
+    color:#0972A5;
+    font-family:Tahoma,Sans MS,serif;
+    font-size:14px;
+    font-weight:normal;
+    line-height:1.5em;
+     background-color: white; padding-top: 0px; padding-left: 0px; padding-right: 0px;padding-bottom: 0px;
+
+    -moz-border-radius-bottomleft:15px;
+    -moz-border-radius-bottomright:15px;
+    -moz-border-radius-topleft:15px;
+    -moz-border-radius-topright:15px;
+
+
+}
+
+#login label{
+    color:#0972A5;
+    font-family:Tahoma,Sans MS,serif;
+    font-size:14px;
+    font-weight:normal;
+    line-height:1.5em;
+
+}
+/*
+#login input[type=text],input[type=password]{
+    -moz-border-radius-bottomright:20px;
+    -moz-border-radius-bottomleft:20px;
+    -moz-border-radius-topleft:20px;
+    -moz-border-radius-topright:20px;
+   ;
+    border-style:none;
+    border: 1px solid #000000;
+}*/
+
+#login-style{
+    background:#DCD9DE url(../css/dark-hive/images/ui-bg_highlight-soft_35_222222_1x100.png) repeat-x scroll 50% 50%;
+}

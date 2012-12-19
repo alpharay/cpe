@@ -1,0 +1,7 @@
+1. Please the website needs a server, xampp or wampp to be installed
+
+2. Please the folder 'rich' needs to be copied to the htdocs of the xampp
+
+3. Please access the home page by typing http://localhost/rich/index.php
+
+Thank you

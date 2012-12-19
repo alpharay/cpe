@@ -1,0 +1,140 @@
+/* 
+    Document   : menuCss
+    Created on : Aug 20, 2011, 10:37:14 PM
+    Author     : cyberdex
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+div#menu {
+    background: url("images/main-bg1.png") repeat-x scroll 0 0 transparent;
+    height: 41px;
+}
+div#menu ul {
+    float: right;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+div#menu ul.menu {
+    padding-left: 30px;
+}
+div#menu li {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0 5px 0 0;
+    position: relative;
+    z-index: 9;
+}
+div#menu li:hover > ul {
+    left: -2px;
+}
+div#menu a {
+    display: block;
+    float: left;
+    font: 12px Trebuchet MS;
+    height: 41px;
+    position: relative;
+    text-decoration: none;
+    z-index: 10;
+}
+div#menu a:hover, div#menu a:hover span {
+    color: #FFFFFF;
+}
+div#menu li.current a {
+}
+div#menu span {
+    background-position: 95% 0;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+}
+div#menu ul ul a.parent span {
+    background-image: url("images/item-pointer.gif");
+    background-position: 95% 8px;
+}
+div#menu ul ul a.parent:hover span {
+    background-image: url("images/item-pointer-mover.gif");
+}
+div#menu a {
+    color: #E5E5E5;
+    line-height: 30px;
+    padding: 0 10px;
+}
+div#menu span {
+    margin-top: 5px;
+}
+div#menu li {
+    background: url("images/main-delimiter.png") no-repeat scroll 98% 4px transparent;
+}
+div#menu li.last {
+    background: none repeat scroll 0 0 transparent;
+}
+div#menu ul ul li {
+    background: none repeat scroll 0 0 transparent;
+}
+div#menu ul ul {
+    background: none repeat scroll 0 0 #2D2D2D;
+    left: -999em;
+    margin-top: 1px;
+    padding: 5px 0 0;
+    position: absolute;
+    top: 38px;
+    width: 163px;
+}
+div#menu ul ul a {
+    color: #A9A9A9;
+    display: block;
+    float: none;
+    height: auto;
+    line-height: 24px;
+    padding: 0 0 0 15px;
+}
+div#menu ul ul span {
+    color: #A9A9A9;
+    margin-top: 0;
+    padding-right: 15px;
+}
+div#menu ul ul a:hover span {
+    color: #FFFFFF;
+}
+div#menu ul ul li.last {
+    background: none repeat scroll 0 0 transparent;
+}
+div#menu ul ul li {
+    width: 100%;
+}
+div#menu ul ul ul {
+    margin: -38px 0 0 163px !important;
+    padding: 0;
+}
+div#menu ul ul ul {
+    background: none repeat scroll 0 0 #292929;
+}
+div#menu ul ul ul ul {
+    background: none repeat scroll 0 0 #262626;
+}
+div#menu ul ul ul ul {
+    background: none repeat scroll 0 0 #232323;
+}
+div#menu li.back {
+    background: url("images/lava.png") no-repeat scroll right -44px transparent !important;
+    height: 44px;
+    margin: -1px 0 0 -5px;
+    position: absolute;
+    width: 13px;
+    z-index: 8;
+}
+div#menu li.back .left {
+    background: url("images/lava.png") no-repeat scroll left top transparent !important;
+    height: 44px;
+    margin-right: 8px;
+}
+
+
