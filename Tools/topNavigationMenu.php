@@ -27,7 +27,7 @@
         
         
         //Faculty/Staff
-       $item2sub1Sub1=array('subSubItem'=>'Full Time','link'=>'../../cpe/faculty/faculty.php');
+        $item2sub1Sub1=array('subSubItem'=>'Full Time','link'=>'../../cpe/faculty/faculty_prev.php');
         $item2sub1Sub2=array('subSubItem'=>'Part-time','link'=>'../../cpe/faculty/faculty.php');
         $item2sub1Sub3=array('subSubItem'=>'Visiting Scholars','link'=>'../../cpe/faculty/faculty.php');
         $item2sub1Sub4=array('subSubItem'=>'Post Retirement','link'=>'../../cpe/faculty/faculty.php');

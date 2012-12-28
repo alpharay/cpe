@@ -9,11 +9,11 @@ $(function() {
 		// before showing the modal window, reset the form incase of previous use.
 		$('.success, .error').hide();
 		$('form#contactForm').show();
-		
+
 		// Reset all the default values in the form fields
-		$('#name').val('Your name');
-		$('#email').val('Your email address');
-		$('#comment').val('Enter your comment or query...');
+		$('#name').val("");
+		$('#email').val("");
+		$('#comment').val("");
 
 		//show the mask and contact divs
 		$('#mask').show().fadeTo('', 0.7);
@@ -41,24 +41,23 @@ $(function() {
 	$('input#submit').click(function() {
 	$('.error').hide().remove();
 		//Inputed Strings
-		var username = $('#name').val(),
+		var name = $('#name').val(),
 			email = $('#email').val(),
 			comment = $('#comment').val();
-		
-	
+			
 		//Error Count
-		var error_count;
+		var error_count=0;
 		
 		//Regex Strings
-		var username_regex = /^[a-z0-9_-]{3,16}$/,
-			email_regex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+		var username_regex = /^[A-Za-z0-9 _ .-]{4,16}$/,
+			email_regex = /^\S+\S+\.[A-Za-z]{2,4}$/;
 		
 			//Test Username
 			if(!username_regex.test(name)) {
 				$('#contact_header').after('<p class=error>Invalid username entered!</p>');
 				error_count += 1;
 			}
-			
+
 			//Test Email
 			if(!email_regex.test(email)) {
 				$('#contact_header').after('<p class=error>Invalid email entered!</p>');
@@ -73,7 +72,16 @@ $(function() {
 			
 			//No Errors?
 			if(error_count === 0) {
-				$.ajax({
+				$.post("send.php", { name: name, email: email, comment: comment,error: function() {
+						$('.error').hide();
+						$('#sendError').slideDown('slow');
+					},
+					success: function () {
+						$('.error').hide();
+						$('.success').slideDown('slow');
+						$('form#contactForm').fadeOut('slow');
+					}	});
+				/*.ajax({
 					type: "post",
 					url: "send.php",
 					data: "name=" + name + "&email=" + email + "&comment=" + comment,
@@ -86,7 +94,7 @@ $(function() {
 						$('.success').slideDown('slow');
 						$('form#contactForm').fadeOut('slow');
 					}				
-				});	
+				});*/
 			}
 			
 			else {

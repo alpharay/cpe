@@ -11,7 +11,27 @@ and open the template in the editor.
      <body>        
         <div id="container">
             
-            <?php require_once '../Tools/topNavigationMenu.php';           
+            <?php require_once '../Tools/topNavigationMenu.php';
+
+            $result=mysql_query("SELECT `surName`, `otherNames`, `emailAddress`, `hall`, `yearGroup`, `studLevel` FROM `student` ORDER BY `surName`");
+
+            //this function gets students according to their level
+            function getStudents($queryResult, $level)
+            {
+                $tableData = array();
+                while($row=mysql_fetch_array($queryResult))
+                {
+                    if ($row['studLevel']==$level)
+                    {
+                        $surname=$row['surName'];
+                        $otherNames=$row['otherNames'];
+                        $emailAddress=$row['emailAddress'];
+                        $fillRow = array($surname, $otherNames, $emailAddress);
+                        array_push($tableData,$fillRow);
+                    }
+                }
+                return $tableData;
+            }
             ?>  
             
 <div id ="undergrad">
@@ -27,7 +47,7 @@ and open the template in the editor.
              <div class="arrow"></div>
          </div>
 
-          <div class="tab lab" id="tab_menu_3">
+          <div class="tab" id="tab_menu_3">
              <div class="link">L300 Students</div>
              <div class="arrow"></div>
          </div>
@@ -42,14 +62,14 @@ and open the template in the editor.
 		<strong style="color:green;">UNDERGRAD MEMBERS</strong><BR><BR>
 			<h4><font color="#000080">L100 Students</font></h4>
 			 <?php
-			$tableTester = new tableGenerator('col', '');
 
+            $tableTester = new tableGenerator('col', '');
+                        //$fillRow = array($one, $two, $three);
+                        //$secondRow = array('', '', '','');
 
-                        $firstRow = array('', '', '','');
-                        $secondRow = array('', '', '','');                        
-
-                        $tableData = array($firstRow,$secondRow);
-                        $tableTester->generateTable15(array('Surname', 'FirstName', 'Hall','Email'), $tableData);
+                        //$tableData = array($firstRow,$secondRow);
+                        $tableTester->generateTable15(array('Surname', 'Other Names','Email'), getStudents($result,100));
+                        mysql_data_seek($result,0);
                         ?>
                         <BR><BR>
  		</div>
@@ -57,14 +77,23 @@ and open the template in the editor.
                     <strong style="color:green;">UNDERGRAD MEMBERS</strong><BR><BR>
 			<h4><font color="#000080">L200 Students</font></h4>
 			 <?php
-			$tableTester = new tableGenerator('col', '');
+            //$tableTester = new tableGenerator('col', '');
+            /*$tableData = array();
+            while($row=mysql_fetch_array($result))
+            {
+                $surname=$row['surName'];
+                $otherNames=$row['otherNames'];
+                $emailAddress=$row['emailAddress'];
+                echo $surname;
+                if ($row['studLevel']==200)
+                {
+                    $fillRow = array($surname, $otherNames, $emailAddress);
+                    array_push($tableData,$fillRow);
+                }
+            }*/
 
-
-                        $firstRow = array('', '', '','');
-                        $secondRow = array('', '', '','');                        
-
-                        $tableData = array($firstRow,$secondRow);
-                        $tableTester->generateTable15(array('Surname', 'FirstName', 'Hall','Email'), $tableData);
+            $tableTester->generateTable15(array('Surname', 'Other Names','Email'), getStudents($result,200));
+            mysql_data_seek($result,0);
                         ?>
             <BR><BR>
 		</div>
@@ -73,14 +102,8 @@ and open the template in the editor.
                     <strong style="color:green;">UNDERGRAD MEMBERS</strong><BR><BR>
             <h4><font color="#000080">L300 Students</font></h4>
             <?php
-			$tableTester = new tableGenerator('col', '');
-
-
-                        $firstRow = array('', '', '','');
-                        $secondRow = array('', '', '','');                        
-
-                        $tableData = array($firstRow,$secondRow);
-                        $tableTester->generateTable15(array('Surname', 'FirstName', 'Hall','Email'), $tableData);
+            $tableTester->generateTable15(array('Surname', 'Other Names','Email'), getStudents($result,300));
+            mysql_data_seek($result,0);
                         ?>
             <BR><BR>			
 	</div>
@@ -88,15 +111,8 @@ and open the template in the editor.
 		<strong style="color:green;">UNDERGRAD MEMBERS</strong><BR><BR>
             	<h4><font color="#000080">L400 Students</font></h4>
 			 <?php
-			$tableTester = new tableGenerator('col', '');
-
-
-                        $firstRow = array('', '', '','');
-                        $secondRow = array('', '', '','');                        
-
-                        $tableData = array($firstRow,$secondRow);
-                        $tableTester->generateTable15(array('Surname', 'FirstName', 'Hall','Email'), $tableData);
-                        ?>
+                $tableTester->generateTable15(array('Surname', 'Other Names','Email'), getStudents($result,400));
+                ?>
 		</div>	
 </div>
 
