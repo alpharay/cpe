@@ -84,14 +84,9 @@ $(function() {
 </script>
 
 
-    <script type='text/javascript' src='Tools/jquery-1.4.2.min.js'></script>
-
-<script type='text/javascript' src='Tools/slotmachine.js'></script>
-
-
-
-
-    <script type="text/javascript" src="Tools/js/jquery.js"></script>
+    	<script type='text/javascript' src='Tools/jquery-1.4.2.min.js'></script>
+		<script type='text/javascript' src='Tools/slotmachine.js'></script>
+    	<script type="text/javascript" src="Tools/js/jquery.js"></script>
 
 
 
@@ -101,7 +96,7 @@ $(function() {
 
 
     <!-- include jQuery and Contact-Pop scripts -->
-      <link rel="stylesheet" type="text/css" href="Tools/css/contact-pop.css" />
+<link rel="stylesheet" type="text/css" href="Tools/css/contact-pop.css" />
 <script type="text/javascript" src="Tools/js/jquery-1.3.2.min.js"></script>
 <script type="text/javascript" src="Tools/js/contact-pop.js"></script>
 
@@ -204,10 +199,12 @@ div#copyright a:hover { color:#fff; }
         $item2sub1Sub2=array('subSubItem'=>'Part-time','link'=>'faculty/faculty.php');
         $item2sub1Sub3=array('subSubItem'=>'Visiting Scholars','link'=>'faculty/faculty.php');
         $item2sub1Sub4=array('subSubItem'=>'Post Retirement','link'=>'faculty/faculty.php');
-        $item2sub1Sub5=array('subSubItem'=>'Adjunct','link'=>'#');
+        //$item2sub1Sub5=array('subSubItem'=>'Adjunct','link'=>'#');
         $item2sub1Sub6=array('subSubItem'=>'Graduate Assistant','link'=>'faculty/faculty.php');
         $item2sub1Sub7=array('subSubItem'=>'Teaching Assistant','link'=>'faculty/faculty.php');
-        $item2sub1menuItems=array($item2sub1Sub1,$item2sub1Sub2,$item2sub1Sub3,$item2sub1Sub4,$item2sub1Sub5,$item2sub1Sub6,$item2sub1Sub7);
+        //$item2sub1menuItems=array($item2sub1Sub1,$item2sub1Sub2,$item2sub1Sub3,$item2sub1Sub4,$item2sub1Sub5,$item2sub1Sub6,$item2sub1Sub7);
+		  $item2sub1menuItems=array($item2sub1Sub1,$item2sub1Sub2,$item2sub1Sub3,$item2sub1Sub4,$item2sub1Sub6,$item2sub1Sub7);
+       
         $item2sub1=array('subItem'=>'Academic','link'=>'faculty/faculty.php','subsubmenu'=>$item2sub1menuItems);
         //$item2sub1=array('subItem'=>'Faculty','link'=>'faculty/faculty.php');
         
@@ -222,7 +219,7 @@ div#copyright a:hover { color:#fff; }
         $item2sub4Sub1=array('subSubItem'=>'Undergraduate','link'=>'undergraduate/undergradStudents.php');
         $item2sub4Sub2=array('subSubItem'=>'Postgraduate','link'=>'postgraduate/postgradStudents.php');
         $item2sub4menuItems=array($item2sub4Sub1,$item2sub4Sub2);
-        $item2sub4=array('subItem'=>'Students','link'=>'','subsubmenu'=>$item2sub4menuItems); 
+        $item2sub4=array('subItem'=>'Students','link'=>'../../cpe/undergraduate/undergradStudents.php','subsubmenu'=>$item2sub4menuItems); 
         
         $item2submenuItems=array($item2sub1,$item2sub2,$item2sub3,$item2sub4);
         $item2=array('item'=>'People','link'=>'#','submenu'=>$item2submenuItems);

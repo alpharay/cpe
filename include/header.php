@@ -103,20 +103,63 @@ jQuery(document).ready(function(){
 });
 </script>
 <script type="text/javascript" src="undergraduate/js/jquery-1.5.2.min.js"></script>
+
+
 <script language="JavaScript">
 $(document).ready(function() {
 
     $(".tabs .tab[id^=tab_menu]").hover(function() {
         var curMenu=$(this);
         $(".tabs .tab[id^=tab_menu]").removeClass("selected");
+       //var see = tab[id^=tab_menu];
+       //window.alert(see);
         curMenu.addClass("selected");
-
+			
         var index=curMenu.attr("id").split("tab_menu_")[1];
         $(".curvedContainer .tabcontent").css("display","none");
         $(".curvedContainer #tab_content_"+index).css("display","block");
+        //document.write(index);
     });
 });
 </script>
+ 
+<script type="text/javascript">
+$(document).ready(function(){
+   var block = $(".subsubmenu li a");
+   block.click(function(){
+   var anchoMenu=$(this);
+        $(".tabs .tab[id^=tab_menu]").removeClass("selected");
+        //$(".tabs .tab[id^=tab_menu]").addClass("selected");
+			
+        var index=anchoMenu.attr("id").split("sub_sub_menu_")[1]; 
+        $(".tabs #tab_menu_"+index).addClass("selected");
+        $(".curvedContainer .tabcontent").css("display","none");
+        $(".curvedContainer #tab_content_"+index).css("display","block");
+       // window.alert(index);
+    });  
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+   var block = $(".subMenu li a");
+   block.click(function(){
+   var anchoMenu=$(this);
+        $(".tabs .tab[id^=tab_menu]").removeClass("selected");
+        //$(".tabs .tab[id^=tab_menu]").addClass("selected");
+			
+        var index=anchoMenu.attr("id").split("sub_menu_")[1]; 
+        $(".tabs #tab_menu_"+index).addClass("selected");
+        $(".curvedContainer .tabcontent").css("display","none");
+        $(".curvedContainer #tab_content_"+index).css("display","block");
+       // window.alert(index);
+    });  
+});
+</script>
+
+
+ 
+
 
 
 
