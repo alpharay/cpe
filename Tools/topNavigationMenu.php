@@ -27,6 +27,7 @@
         
         
         //Faculty/Staff
+<<<<<<< HEAD
        $item2sub1Sub1=array('subSubItem'=>'Full Time','link'=>'../../cpe/faculty/faculty.php#');
         $item2sub1Sub2=array('subSubItem'=>'Part-time','link'=>'../../cpe/faculty/faculty.php#');
         $item2sub1Sub3=array('subSubItem'=>'Visiting Scholars','link'=>'../../cpe/faculty/faculty.php#');
@@ -37,6 +38,16 @@
         //$item2sub1menuItems=array($item2sub1Sub1,$item2sub1Sub2,$item2sub1Sub3,$item2sub1Sub4,$item2sub1Sub5,$item2sub1Sub6,$item2sub1Sub7); //uncomment when adjunct is added
 		  $item2sub1menuItems=array($item2sub1Sub1,$item2sub1Sub2,$item2sub1Sub3,$item2sub1Sub4,$item2sub1Sub6,$item2sub1Sub7); 	//comment this out when Adjunct is added
         
+=======
+        $item2sub1Sub1=array('subSubItem'=>'Full Time','link'=>'../../cpe/faculty/faculty_prev.php');
+        $item2sub1Sub2=array('subSubItem'=>'Part-time','link'=>'../../cpe/faculty/faculty.php');
+        $item2sub1Sub3=array('subSubItem'=>'Visiting Scholars','link'=>'../../cpe/faculty/faculty.php');
+        $item2sub1Sub4=array('subSubItem'=>'Post Retirement','link'=>'../../cpe/faculty/faculty.php');
+        $item2sub1Sub5=array('subSubItem'=>'Adjunct','link'=>'#');
+        $item2sub1Sub6=array('subSubItem'=>'Graduate Assistant','link'=>'../../cpe/faculty/faculty.php');
+        $item2sub1Sub7=array('subSubItem'=>'Teaching Assistant','link'=>'../../cpe/faculty/faculty.php');
+        $item2sub1menuItems=array($item2sub1Sub1,$item2sub1Sub2,$item2sub1Sub3,$item2sub1Sub4,$item2sub1Sub5,$item2sub1Sub6,$item2sub1Sub7);
+>>>>>>> 9ba5ee311ce2043fbd349b918984cc05d055ab3d
         $item2sub1=array('subItem'=>'Academic','link'=>'../../cpe/faculty/faculty.php','subsubmenu'=>$item2sub1menuItems);
         //$item2sub1=array('subItem'=>'Faculty','link'=>'faculty/faculty.php');
         
