@@ -15,13 +15,10 @@ class ConnectionToUG {
     //put your code here
      const SERVER="localhost";
 //     const USER="lnrdefusr";
-//     const PASSWORD="!2jumpers";
+    //const PASSWORD="!2jumpers";
      const USER="root";
-<<<<<<< HEAD
-    // const PASSWORD="cyberdex";
-=======
->>>>>>> 9ba5ee311ce2043fbd349b918984cc05d055ab3d
-     const PASSWORD="";
+    const PASSWORD="cyberdex";
+	  //     const PASSWORD="";
      const DATABASE="compEngDb";
      private $connection;
      private $selected_db;
