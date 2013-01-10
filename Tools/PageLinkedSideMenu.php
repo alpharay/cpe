@@ -50,12 +50,16 @@ class PageLinkedSideMenu {
         		//echo "<div class='tab selected first' id='$tabMenuNo'>";
         		//echo "$tabMenuNo";
         	}
-        else
+        else if($tabMenuNo==sizeof($sideMenuItems))
         {
-        		echo "<div class='tab {$distinct}' id='tab_menu_{$tabMenuNo}'>";
+        		echo "<div class='tab lab' id='tab_menu_{$tabMenuNo}'>";
         		//echo "<div class='tab {$distinct}' id='$tabMenuNo>";
         		//echo "$tabMenuNo";
         }
+        else
+        {
+			echo "<div class='tab' id='tab_menu_{$tabMenuNo}'>";
+		}
         //echo "<div class='tab {$distinct}' id='tab_menu_{$tabMenuNo}'>";
         
         echo "<div class='link'>{$sideMenuItems[$i]['name']}</div>";
