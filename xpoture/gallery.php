@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 	<!-- saved from url=(0014)about:internet -->
@@ -7,7 +5,7 @@
     <head>
 		<title>Department Gallery</title>
 		<link href="demo1.css?v=0.9" type="text/css" rel="stylesheet" />
-  <script src="res/jquery-1.5.1.min.js" type="text/javascript"></script>
+  		<script src="res/jquery-1.5.1.min.js" type="text/javascript"></script>
 		<script src="jquery.exposure.js?v=0.9" type="text/javascript"></script>
 		<script type="text/javascript">
 			$(function(){
@@ -132,16 +130,16 @@
 					<li><a href="slides/IMG_5324.jpeg"><img src="thumbs/IMG_5324.jpeg" title="Cold" /></a></li>
 					<li><a href="slides/IMG_5650.jpeg"><img src="thumbs/IMG_5650.jpeg" title="Homes" /></a></li>
 					<li><a href="slides/IMG_9006.jpg"><img src="thumbs/IMG_9006.jpg" title="Ace" /></a></li-->                                   
-                      <?echo "";
-                      $albumPics=new PictureProcessing();
-                      if(!isset($_GET['album'])){//for showing pics on one side and showing folder links on another
-                      $albumPics->displayImages($base,$thumbs, $picLimit);                      
-                      }
-                      if(isset($_GET['album'])){//for showing the contents of the folders on click
-                          $get_album=$_GET['album'];
-                          $linkBuilder=$base.'/'.$get_album;
-                          $albumPics->displayImages($linkBuilder,$thumbs, $picLimit,$get_album);
-                          }else{$get_album=false;}
+                      <?php echo "";
+						  $albumPics = new PictureProcessing();
+						  if(!isset($_GET['album'])) {//for showing pics on one side and showing folder links on another
+								$albumPics -> displayImages($base,$thumbs, $picLimit);}
+						
+						  if(isset($_GET['album'])) {//for showing the contents of the folders on click
+								$get_album = $_GET['album'];
+								$linkBuilder = $base.'/'.$get_album;
+								$albumPics -> displayImages($linkBuilder,$thumbs, $picLimit,$get_album);}
+						  else {$get_album=false;}
                       ?>
 				</ul>
 				<div id="controls"></div>

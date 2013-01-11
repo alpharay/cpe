@@ -100,7 +100,7 @@ div#menu ul ul {
 div#menu ul ul a {
     padding: 0 0 0 15px;
     height: auto;
-    float: none;
+    float: left;
     display: block;
     line-height: 24px;
     color: rgb(169,169,169);

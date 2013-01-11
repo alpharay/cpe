@@ -203,9 +203,9 @@ class FacultyStaffOrMemService {
     $image= mysql_query("SELECT * FROM  imageStore where imageID=$memberID");
     $image=mysql_fetch_assoc($image);
     $image=$image['image'];
-      
+    
     header("Content-type: image/jpeg");
-      
+    
     echo $image;
     }
 }

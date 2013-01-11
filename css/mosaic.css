@@ -8,102 +8,103 @@
 */
 
 * {
-	margin:0;
-	padding:0;
-	border:none;
-	outline:none;
+margin:0;
+padding:0;
+border:none;
+outline:none;
 }
+
 #content{
 background-color:#f0efed;
 width:987;
-height:350px;
+height:75%;
 position:relative;
 top:125px;
 }
 
 /*General Mosaic Styles*/
 .mosaic-block {
+	position:absolute;
+	overflow:hidden;
+	width:300px;
+	height:80px;
+	background:#111 url(../img/progress.gif) no-repeat center center;
+	background-color:#f0efed;
+	border:1px solid #fff;
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
+}
 
+.mosaic-block1 {
 	position:absolute;
 	top:10px;
 	left:10px;
 	overflow:hidden;
 	width:300px;
 	height:80px;
-
 	background:#111 url(../img/progress.gif) no-repeat center center;
-	border:1px solid #fff;
-	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
-}
-.mosaic-block1 {
-
-	position:absolute;
-	top:10px;
-	left:340px;
-	overflow:hidden;
-	width:300px;
-	height:80px;
-
-	background:#111 url(../img/progress.gif) no-repeat center center;
+	background-color:#f0efed;
 	border:1px solid #fff;
 	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
 }
 .mosaic-block2 {
-
 	position:absolute;
 	top:10px;
-	right:10px;
+	left:340px;
 	overflow:hidden;
 	width:300px;
 	height:80px;
-
+	background:#111 url(../img/progress.gif) no-repeat center center;
+	border:1px solid #fff;
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
+}
+.mosaic-block3 {
+	position:absolute;
+	top:10px;
+	left:675px;
+	overflow:hidden;
+	width:300px;
+	height:80px;
 	background:#111 url(../img/progress.gif) no-repeat center center;
 	border:1px solid #fff;
 	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
 }
 
-.mosaic-block3 {
-
+.mosaic-block4 {
 	position:absolute;
 	top:100px;
 	left:10px;
 	overflow:hidden;
 	width:300px;
 	height:80px;
-
-	background:#111 url(../img/progress.gif) no-repeat center center;
-	border:1px solid #fff;
-	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
-}
-.mosaic-block4 {
-
-	position:absolute;
-	top:100px;
-	left:340px;
-	overflow:hidden;
-	width:300px;
-	height:80px;
-
 	background:#111 url(../img/progress.gif) no-repeat center center;
 	border:1px solid #fff;
 	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
 }
 .mosaic-block5 {
-
+	position:absolute;
+	top:100px;
+	left:340px;
+	overflow:hidden;
+	width:300px;
+	height:80px;
+	background:#111 url(../img/progress.gif) no-repeat center center;
+	border:1px solid #fff;
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
+}
+.mosaic-block6 {
 	position:absolute;
 	top:100px;
 	right:10px;
 	overflow:hidden;
 	width:300px;
 	height:80px;
-
 	background:#111 url(../img/progress.gif) no-repeat center center;
 	border:1px solid #fff;
 	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
 }
 /*SUCH A CSS SECTION WOULD NEED TO BE CREATED ANY TIME A NEW GALLERYLINK IS TO BE ADDED TO CORRESPOND TO
 THAT NEWLY CREATED LINK AS THE ABOVE CORRESPOND TO THE ALREADY EXISTING ONES
-.mosaic-block6 { 
+.mosaic-block7 { 
 
 	position:absolute;
 	top:200px;

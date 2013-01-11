@@ -14,6 +14,7 @@ require_once 'ConnectionToUG.php';
 
 class PictureProcessing {
     //put your code here
+	
     public function PictureProcessing(){       
     $this->con =new ConnectionToUG();
     $this->con->setConnectToSQL();
@@ -116,31 +117,64 @@ class PictureProcessing {
       }      
       echo $image;
     }
-    
-    
-    
     //other functions
     
-    
-    public function generatePicAndAlbumPanel($imagePanel){        
+	public function generatePicAndAlbumPanel($imagePanel){        
       echo "<div id='content'>";
-      for($i=0;$i<sizeof($imagePanel);$i++){
-          if($i<3)$choice='fade';else $choice='bar';
-          
-          if($i==0) {echo "<div class='mosaic-block {$choice}'>";}
- else{echo "<div class='mosaic-block{$i} {$choice}'>";}
-
-			echo "<a href='{$imagePanel[$i]['link']}' class='mosaic-overlay'>";
-				echo "<div class='details'>";
-					echo "<h4>{$imagePanel[$i]['name']}</h4>";
-					echo "<p>Click To View</p>";
-				echo "</div>";
-			echo "</a>";
-			echo "<div class='mosaic-backdrop'><img src='{$imagePanel[$i]['linkImage']}'/></div>";
-		echo "</div>";                
-                }
-echo "</div>";
+	  $choice='fade';
+	  $cnt = 0;
+	  $cl = 0;
+	  for( $i = 0; $i < sizeof($imagePanel); $i++){
+          //if($i<3)$choice='fade';else $choice='fade';
+		  $j = $i+1;
+		  if ($cnt == 3) { $cnt = 0; $cl++;}
+		  $top = 10+(90*$cl);
+		  $left = 10+(330*($i%3));
+		  $cnt++;
+		  echo '<div class="mosaic-block fade" style="top:'. $top .'px; left:'.$left.'px;">';
+		  echo "<a href='{$imagePanel[$i]['link']}' class='mosaic-overlay'>";
+		  echo "<div class='details'>";
+		  echo "<img src='../img/{$imagePanel[$i]['image']}' id='".$i."' onClick='setCookie(".$i.")' />";
+		  // echo "<p>Click To View</p>";
+		  echo "</div>";
+		  echo "</a>";
+		  echo "<div class='mosaic-backdrop'><img src='{$imagePanel[$i]['linkImage']}' /></div>";
+		  echo "</div>";
+		  }
+	echo "</div>";
     }
+	
+	public function createAlbum($imagePanel, $album_name, $logo, $overlay_logo){
+		$link = "../gallery/display.php";
+		array_push($imagePanel, array('name'=>$album_name,'image'=>'../img/'. $logo,'link'=>$link,'linkImage'=>'../img/'. $overlay_logo));
+		return $imagePanel;
+		}
+	
+	public function getAlbumImages($imagePanel)
+	{
+		echo "<br/>";
+		if( isset($_COOKIE["index"])) {
+			$ind = $_COOKIE["index"];}
+		echo '<div id="thumbs" class="navigation">
+				<ul class="thumbs noscript">';
+		$result = mysql_query("SELECT * FROM galleryimages WHERE album_name = '" . $imagePanel[$ind]['name'] . "';");
+		
+		while($row = mysql_fetch_array($result))
+		{
+			echo '<li>
+					<a class="thumb" name="leaf" href="../gallery/images/' . $row['picture_name'] . '" title="' . $imagePanel[$ind]['name'] . '">
+						<img src="../gallery/images/' . $row['picture_name'] . '" width="80" height="70" alt="' . $imagePanel[$ind]['name'] . '" /></a>
+							<div class="caption">
+								<div class="download">
+									<a href="../gallery/images/' . $row['picture_name'] . '">Download Original</a>
+								</div>
+								<!--<div class="image-title">' . $imagePanel[$ind]['name'] . '</div>-->
+								<div class="image-desc">' . $row['picture_description'] . '</div>
+							</div>
+						</li>';
+			}
+		echo '</ul></div>';
+		}
     
     //FOR PROCESSING PICS IN ALBUMS AND THOSE NOT IN ALBUMS
     //CAN BE CUSTOMISED AND USED WITH ANY JQUERY AS displayImages below(a customised version of 
@@ -183,9 +217,8 @@ echo "</div>";
       {
           $link=$base."/".$directoryList[$j];
           //echo "<br/><a href='$link'>$directoryList[$j]</a>";     
-         echo "<br/><a href='$thisFile?album=$directoryList[$j]'>$directoryList[$j]</a>";       
-
-      }
+         echo "<br/><a href='$thisFile?album=$directoryList[$j]'>$directoryList[$j]</a>";
+		}
     }
     
     //UPGRADED FORM OF getAlbumPics ABOVE; works with the slideshow jquery in 
@@ -222,8 +255,7 @@ echo "</div>";
       {
           $link=$base."/".$directoryList[$j];
           //echo "<br/><a href='$link'>$directoryList[$j]</a>";     
-         echo "<br/><a href='$thisFile?album=$directoryList[$j]'>$directoryList[$j]</a>";       
-
+         echo "<br/><a href='$thisFile?album=$directoryList[$j]'>$directoryList[$j]</a>";
       }
     }
 }
