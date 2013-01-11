@@ -239,7 +239,7 @@ To be admitted into the programme, a candidate must meet the following condition
 		</div>
             <div class="tabcontent" id="tab_content_9">
 			<strong>Application Forms</strong><BR><BR>
-			To be filled
+			<a href="http://sgs.ug.edu.gh/index1.php?linkid=406" style="color:blue;">Click here</a>
 		</div>
 	</div>
 </div>

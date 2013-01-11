@@ -147,15 +147,16 @@ jQuery(function($){
         $mainMenuItems=array($item1,$item2,$item3,$item4,$item5,$item6,$item7,$item8,$item9);
         $MAINMENU=new MenuCreator();
         $MAINMENU->BuildMainMenu($mainMenuItems,'../Tools/menuCss.css');
-     
+	?>
+<?php     
 $link = "../gallery/display.php";
-$galleryLink1=array('name'=>'Dinner','image'=>'../img/dinner_alt.png','link'=>'../gallery/display.php','linkImage'=>'../img/dinner.png');
-$galleryLink2=array('name'=>'Award','image'=>'../img/award_alt.png','link'=>'../gallery/display.php','linkImage'=>'../img/award.png');
-$galleryLink3=array('name'=>'Graduation','image'=>'../img/graduation_alt.png','link'=>'../gallery/display.php','linkImage'=>'../img/graduation.png');
-$galleryLink4=array('name'=>'Homecoming','image'=>'../img/homecoming_alt.png','link'=>'../gallery/display.php','linkImage'=>'../img/homecoming.png');
-$galleryLink5=array('name'=>'Student Presentations','image'=>'../img/stud_pres_alt.png','link'=>'../gallery/display.php','linkImage'=>'../img/stud_pres.png');
-$galleryLink6=array('name'=>'Examinations','image'=>'../img/exams_alt.png','link'=>'../gallery/display.php','linkImage'=>'../img/exams.png');
-$galleryLink7=array('name'=>'Seminars','image'=>'../img/seminars_alt.png','link'=>'../gallery/display.php','linkImage'=>'../img/seminars.png');
+$galleryLink1=array('name'=>'Dinner','image'=>'../img/dinner_alt.png','link'=>$link,'linkImage'=>'../img/dinner.png');
+$galleryLink2=array('name'=>'Award','image'=>'../img/award_alt.png','link'=>$link,'linkImage'=>'../img/award.png');
+$galleryLink3=array('name'=>'Graduation','image'=>'../img/graduation_alt.png','link'=>$link,'linkImage'=>'../img/graduation.png');
+$galleryLink4=array('name'=>'Homecoming','image'=>'../img/homecoming_alt.png','link'=>$link,'linkImage'=>'../img/homecoming.png');
+$galleryLink5=array('name'=>'Student Presentations','image'=>'../img/stud_pres_alt.png','link'=>$link,'linkImage'=>'../img/stud_pres.png');
+$galleryLink6=array('name'=>'Examinations','image'=>'../img/exams_alt.png','link'=>$link,'linkImage'=>'../img/exams.png');
+$galleryLink7=array('name'=>'Seminars','image'=>'../img/seminars_alt.png','link'=>$link,'linkImage'=>'../img/seminars.png');
 //N.B: if extra galleryLinks need to be added in future as those on the previous lines
 //, the mosaic.css file in cpe/css/mosaic.css should be edited to accomodate this
 // change and to ensure that they reflect on the web page

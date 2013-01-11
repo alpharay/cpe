@@ -34,17 +34,17 @@ Telephone: 233-28-910-9106 &nbsp&nbsp&nbsp Fax 233-21-517741<BR>Email: compeng@u
 	<div id="contact_header">Contact Us</div>
 	<p class="success">Thanks! Your message has been sent.</p>
 
-  <form action="send.php" method="post" name="contactForm" id="contactForm">
-  <p><input name="name" id="name" type="text" size="30" value="Your Name" /></p>
-  <p><input name="email" id="email" type="text" size="30" value="Your Email Address" /></p>
-  <p><textarea name="comment" id="comment" rows="5" cols="40">Enter your comment </textarea></p>
-  <p><input type="submit" id="submit" name="submit" value="Send" /></p>
- </form>
+      <form action="send.php" method="post" name="contactForm" id="contactForm">
+              <p><input name="name" id="name" type="text" size="30" placeholder="Your name"/></p>
+              <p><input name="email" id="email" type="text" size="30" placeholder="Your email address"/></p>
+              <p><textarea name="comment" id="comment" rows="5" cols="40" placeholder="Enter your comment or query..."></textarea></p>
+              <p><input type="submit" id="submit" name="submit" value="Send" /></p>
+      </form>
 </div>
 
-<div id="mask"></div>
+            <div id="mask"></div>
 
-<!--end contact form-->
+            <!--end contact form-->
 
 </body>
 </html>

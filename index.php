@@ -229,7 +229,7 @@ div#copyright a:hover { color:#fff; }
         
         
         //Undergraduate
-        $item3sub1=array('subItem'=>'Admission ','link'=>'http://admission.ug.edu.gh/index1.php?linkid=325&sublinkid=177');
+        $item3sub1=array('subItem'=>'Admission ','link'=>'http://www.ug.edu.gh/index1.php?linkid=1216&sublinkid=830');
         $item3sub2=array('subItem'=>'Graduation ','link'=>'undergraduate/undergrade.php');
         $item3sub3=array('subItem'=>'Catalog of Courses','link'=>'undergraduate/undergrade.php');
         $item3sub4=array('subItem'=>'Internships','link'=>'undergraduate/undergrade.php');

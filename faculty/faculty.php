@@ -31,14 +31,18 @@ and open the template in the editor.
     ?>    
 	
     <?php
-    //$sidemenuLinkedPg->sideMenu_sPage();//currently customised for all full time teaching staff   
+    //$sidemenuLinkedPg->sideMenu_sPage();//currently customised for all full time teaching staff 
     $sidemenuLinkedPg->genericSideMenu_sPage($item->getByFacLevID(1),'1');  
-    $sidemenuLinkedPg->genericSideMenu_sPage($item->getByFacLevID(2),'2');
+    $sidemenuLinkedPg->genericSideMenu_sPage($item->getByFacLevID(2),'2');  
+    
     $sidemenuLinkedPg->genericSideMenu_sPage($item->getByFacLevID(3),'3');
     $sidemenuLinkedPg->genericSideMenu_sPage($item->getByFacLevID(4),'4');
     $sidemenuLinkedPg->genericSideMenu_sPage($item->getByFacLevID(5),'5');
     $sidemenuLinkedPg->genericSideMenu_sPage($item->getByFacLevID(6),'6',true,'teaching');//the 'true' third parameter used to end the side menu
     ?>
+    
+    
+
 
 </BODY>
 </HTML>

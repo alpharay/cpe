@@ -36,7 +36,7 @@ class PageLinkedSideMenu {
 //    $stafforMemDetail[1]->getUserName();
     }
 
-    public function createSideMenu($sideMenuItems,$distinct='fas') {
+    public function createSideMenu($sideMenuItems,$distinct='fas',$whichTab=1) {
         echo "<div id ='undergrad'>";
         echo "<div class='tabscontainer'>";
         echo "<div class='tabs'>";
@@ -44,8 +44,20 @@ class PageLinkedSideMenu {
         for($i=0;$i<sizeof($sideMenuItems);$i++){
             $tabMenuNo=$i+1;
             $id='tab_menu_'.$tabMenuNo;
-        if($tabMenuNo==1){echo "<div class='tab selected first' id='tab_menu_{$tabMenuNo}'>";}
-        else{echo "<div class='tab {$distinct}' id='tab_menu_{$tabMenuNo}'>";}
+        if($tabMenuNo==1)
+        	{
+        		echo "<div class='tab selected first' id='tab_menu_{$tabMenuNo}'>";
+        		//echo "<div class='tab selected first' id='$tabMenuNo'>";
+        		//echo "$tabMenuNo";
+        	}
+        else
+        {
+        		echo "<div class='tab {$distinct}' id='tab_menu_{$tabMenuNo}'>";
+        		//echo "<div class='tab {$distinct}' id='$tabMenuNo>";
+        		//echo "$tabMenuNo";
+        }
+        //echo "<div class='tab {$distinct}' id='tab_menu_{$tabMenuNo}'>";
+        
         echo "<div class='link'>{$sideMenuItems[$i]['name']}</div>";
         echo "<div class='arrow'></div>";
         echo "</div>";
@@ -88,6 +100,7 @@ class PageLinkedSideMenu {
         echo "<div class='curvedContainer'>";
     }
 
+/*
     public function sideMenu_sPage() {// THE PAGE THAT IS LINKED TO THE SIDE MENU
         $imageDisplayer=new FacultyStaffOrMemService();        
         echo "<div class='tabcontent' id='tab_content_1' style='display:block'>";
@@ -118,7 +131,7 @@ class PageLinkedSideMenu {
          }
         echo "<div>";          
     }
-    
+*/   
     
     //GENERIC SIDEMENU PAGE CREATOR FOR ALL PAGES
     public function genericSideMenu_sPage($grpOrPersonsToDisplay,$tabcontentid,$end=false,$researchInterestOff=true,$anchor='') {// THE PAGE THAT IS LINKED TO THE SIDE MENU        

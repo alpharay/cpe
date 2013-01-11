@@ -66,7 +66,7 @@ and open the template in the editor.
     </div>
 	<div class="curvedContainer">
 		<div class="tabcontent" id="tab_content_1" style="display:block">
-			<strong>Undergraduate Admission Requirement</strong><BR><BR>To be filled <BR><BR>
+   <strong>Undergraduate Admission Requirement</strong><BR><BR><a href="http://www.ug.edu.gh/index1.php?linkid=1216&sublinkid=830" style="color:green;">Click here</a><BR><BR>
          <strong></strong><BR><BR>
 			
  		</div>
@@ -182,14 +182,14 @@ and open the template in the editor.
                         $calendarViewer->showCalendar();
                         
                         
-                        
-                        $tableTester = new tableGenerator('col', '');
+                        echo "<br/><br/><a href='http://www.ug.edu.gh/index1.php?linkid=229' style=\"color:blue;\">Click here for the Academic Calendar</a>"
+				 /* $tableTester = new tableGenerator('col', '');
 
                         //for all students
                         $firstRow = array('', "<a href='#'><b/>FIRST SEMESTER</a>", '');
                         $secondRow = array('', "<a href='#'><b/>SECOND SEMESTER</a>", '');
                         $tableData = array($firstRow, $secondRow);
-                        $tableTester->generateTable14(array('', '<b/>ACADEMIC CALENDAR', ''), $tableData);
+                        $tableTester->generateTable14(array('', '<b/>ACADEMIC CALENDAR', ''), $tableData);*/
                         ?>
 		</div>
 			
@@ -214,7 +214,7 @@ and open the template in the editor.
 		</div>
             <div class="tabcontent" id="tab_content_11">
 			<strong>Application Forms</strong><BR><BR>
-			To be filled
+			<a href="http://www.ug.edu.gh/index1.php?linkid=1218" style="color:blue;">Click here</a>
 		</div>
 	</div>
 </div>

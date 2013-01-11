@@ -28,13 +28,13 @@ class tableGenerator {
   }
   echo "</thead></tr>";
  }
- 
+
  public function createtableData($tableData){
      echo "<tbody>";
      for($d=0;$d<sizeof($tableData);$d++){
         echo "<tr>";
         for($e=0;$e<sizeof($tableData[$d]);$e++){
-            echo "<td>{$tableData[$d][$e]}</td>";
+            echo "<td style='width:100%; white-space: nowrap'>{$tableData[$d][$e]}</td>";
         }
         echo "</tr>";
      }

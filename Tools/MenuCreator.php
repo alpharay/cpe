@@ -40,10 +40,12 @@ class MenuCreator {
     }
     
     public function BuildSubMenu($submenuItem){//for building the submenu
-        echo "<ul>";
+        echo "<ul class='subMenu'>";
         if(isset($submenuItem)){
             for($i=0;$i<sizeof($submenuItem);$i++){
-                echo "<li><a href='{$submenuItem[$i]['link']}'><span>{$submenuItem[$i]['subItem']}</span></a>";
+            	$getanchorNo = $i + 1;
+                echo "<li><a href='{$submenuItem[$i]['link']}' id='sub_menu_{$getanchorNo}'><span>{$submenuItem[$i]['subItem']}</span></a>";
+                
                 if(isset($submenuItem[$i]['subsubmenu'])){
                 $this->BuildSubSubMenu($submenuItem[$i]['subsubmenu']);}
                 echo "</li>";
@@ -53,10 +55,12 @@ class MenuCreator {
     }
     
     public function BuildSubSubMenu($subSubMenuItem){
-        echo "<ul>";
+        echo "<ul class='subsubmenu'>";
         if(isset($subSubMenuItem)){
             for($i=0;$i<sizeof($subSubMenuItem);$i++){
-                echo "<li><a href='{$subSubMenuItem[$i]['link']}'><span>{$subSubMenuItem[$i]['subSubItem']}</span></a></li>";
+            	 $anchorMenuNo = $i+1;
+                echo "<li><a href='{$subSubMenuItem[$i]['link']}' id='sub_sub_menu_{$anchorMenuNo}'><span>{$subSubMenuItem[$i]['subSubItem']}</span></a></li>";
+                	//echo "<li><a href='{$subSubMenuItem[$i]['link']}#$i'><span>{$subSubMenuItem[$i]['subSubItem']}$i</span></a></li>"; //addded a tag to the an link
             }
         }
         echo "</ul>";
