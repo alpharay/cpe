@@ -1,7 +1,19 @@
-<?php
-require_once('../include/header.php');
-?>
-
+<?php ob_start();?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<head>    
+    <?require_once '../Tools/calendar/calendarIncluder.php';?>
+</head>  
+     <body>        
+        <div id="container">
+            
+            <?php require_once '../Tools/topNavigationMenu.php';           
+            ?>  
+            
 <div id ="undergrad">
 <div class="tabscontainer">
      <div class="tabs">
@@ -11,221 +23,198 @@ require_once('../include/header.php');
              <div class="arrow"></div>
          </div>
          <div class="tab" id="tab_menu_2">
-             <div class="link">Catalog of Courses</div>
+             <div class="link">Graduation Requirement</div>
              <div class="arrow"></div>
          </div>
 
           <div class="tab lab" id="tab_menu_3">
-             <div class="link">Internship</div>
+             <div class="link">Catalog of Courses</div>
              <div class="arrow"></div>
          </div>
           <div class="tab fas" id="tab_menu_4">
-             <div class="link">Facilities/Labs</div>
+             <div class="link">Internships</div>
              <div class="arrow"></div>
          </div>
           <div class="tab exc" id="tab_menu_5">
-             <div class="link">Exchange Program</div>
+             <div class="link">Facilities</div>
              <div class="arrow"></div>
          </div>
            <div class="tab exc0" id="tab_menu_6">
-             <div class="link">Academic Advisors</div>
+             <div class="link">Exchange Programmes</div>
              <div class="arrow"></div>
          </div>
            <div class="tab exc1" id="tab_menu_7">
-             <div class="link">Opportunities</div>
+             <div class="link">Academic Advisors</div>
              <div class="arrow"></div>
          </div>
            <div class="tab exc2" id="tab_menu_8">
-             <div class="link">Award Scheme</div>
+             <div class="link">Academic Calendar</div>
+             <div class="arrow"></div>
+         </div>           
+          <div class="tab last" id="tab_menu_9">
+             <div class="link">Academic Awards</div>
              <div class="arrow"></div>
          </div>
-           <div class="tab exc3" id="tab_menu_9">
-             <div class="link">Members</div>
+         <div class="tab last" id="tab_menu_10">
+             <div class="link">Opportunities</div>
              <div class="arrow"></div>
          </div>
-          <div class="tab last" id="tab_menu_10">
-             <div class="link">Applications</div>
+         <div class="tab last" id="tab_menu_11">
+             <div class="link">Application Forms</div>
              <div class="arrow"></div>
          </div>
     </div>
 	<div class="curvedContainer">
 		<div class="tabcontent" id="tab_content_1" style="display:block">
-			<strong>Undergraduate Admission Requirement</strong><BR><BR>Also known as ECMAScript,[6] is a prototype-based, object-oriented[7] scripting language that is dynamic, weakly typed and has first-class functions. It is also considered a functional programming language[1] like Scheme and OCaml because it has closures and supports higher-order functions.[8]
-			<br><br>
-
-			JavaScript is an implementation of the ECMAScript language standard and is primarily used in the form of client-side JavaScript, implemented as part of a web browser in order to provide enhanced user interfaces and dynamic websites. This enables programmatic access to computational objects within a host environment.  <BR><BR>
-         <strong>Undergraduate Graduation Requirement</strong><BR><BR>
-			JavaScript's use in applications outside web pages—for example in PDF-documents, site-specific browsers and desktop widgets—is also significant. Newer and faster Javascript VMs and frameworks built upon them (notably Node.js) have also increased the popularity of Javascript for server-side web apps.
-			<br><br>
-			JavaScript uses syntax influenced by that of C. JavaScript copies many names and naming conventions from Java, but the two languages are otherwise unrelated and have very different semantics. The key design principles within JavaScript are taken from the Self and Scheme programming languages.[9]
+   <strong>Undergraduate Admission Requirement</strong><BR><BR>The General Regulations for admission of WASSSCE/SSSCE candidates into undergraduate degree programmes in the University of Ghana shall apply to all students admitted into Computer Engineering programme of the Faculty of Engineering Sciences. The following subjects shall determine candidatesâ€™ aggregate: Core â€“ English, Mathematics and Integrated Science; Electives â€“ Physics, Chemistry and Biology. For admission to a postgraduate degree in Biochemistry, a good first degree in Biochemistry or related field together with a pass in an interview is required.<BR><BR>
+         <strong></strong><BR><BR>
+			
  		</div>
 		<div class="tabcontent" id="tab_content_2">
-			<strong>Catalog of Courses In Computer Engineering Department</strong> <BR><BR>The Department offers courses strictly related to computer engineering from L100 to L400<BR><BR>
-            <strong><u>Level 100 Courses</u></strong><BR><BR>
-            (the look and formatting) of a document written in a markup language. Its most common application is to style web pages written in
-            HTML and XHTML, but the language can also be applied to any kind of XML document, including plain XML, SVG and XUL.
-			<br><br>
-			 <strong><u>Level 200 Courses</u></strong><BR><BR>
-			CSS is designed primarily to enable the separation of document content (written in HTML or a similar markup language)
-            from document presentation, including elements such as the layout, colors, and fonts.[1] This separation can improve
-             content accessibility, provide more flexibility and control in the specification of presentation characteristics,<BR><BR>
-              <strong><u>Level 300 Courses</u></strong><BR><BR>
-             enable multiple pages to share formatting, and reduce complexity and repetition in the structural content
-             (such as by allowing for tableless web design). CSS can also allow the same markup page to be presented in
-             different styles for different rendering methods, such as on-screen, in print, by voice (when read out by a <BR><BR>
-              <strong><u>Level 400 Courses</u></strong><BR><BR>
-             speech-based browser or screen reader) and on Braille-based, tactile devices. While the author of a document
-             typically links that document to a CSS style sheet, readers can use a different style sheet, perhaps one on
-             their own computer, to override the one the author has specified.
+			<strong>Undergraduate Graduation Requirement</strong> <BR><BR>
+                        
+                        To graduate with a Bachelor of Science Degree in Engineering, a student must satisfy all 
+                        requirements of the University, the Faculty of Engineering, and the Department.<br/><br/>
+                        
+                        <ul>
+                            <li>
+                            <b>A. University Requirements</b><br/>
+                            Students must take and pass all the following University required courses: 
+                            <ul style="padding-left:50px; ">
+                            <li/>UGRC 110	Academic Writing I 
+                            <li/>UGRC 150	Critical Thinking and Practical Reasoning 
+                            <li/>UGRC 130	Understanding Human Societies
+                            <li/>UGRC 220 	African Studies 
+                            <li/>FAEN 206	Technical Report Writing (UGRC 210 Academic Writing II) 
+                            </ul>
+                            </li><br/>
+                            <li>
+                             <b>B. Faculty Requirements</b><br/>
+                            A student shall be deemed to have satisfied the requirements for graduation if: 
+                            <ul style="padding-left:50px; ">
+                            <li/>A student must take and pass the following courses: 
+                            <ul style="padding-left:50px; ">
+                                <li/>FAEN 101 - Algebra 
+                                <li/>FAEN 102 - Calculus I  
+                                <li/>FAEN 201 - Calculus II 
+                                <li/>FAEN 202 - Differential Equations                                 
+                            </ul>
+                            <li/>A student must have accumulated 144 credits and passed at least 120 credits.
+                            <li/>He/she must not have failed more than 24 credits of core and prescribed electives
+                            , provided that the failed grades are not lower than "E" and are not listed as requirements
+                            for graduation by the university, Faculty, or Department.
+                           </ul>
+                            </li><br/>
+                            <li>
+                             <b>C. Department Requirements</b><br/>
+                      In addition to the above University and Faculty requirements, a student must take 
+                      and pass the following courses in the Department:<br/><br/>
+                      <ul style="padding-left:50px; ">
+                                        <li/>FAEN 108	Basic Electronics or CPEN 306 Microelectronic Devices and Circuits  
+                                        <li/>FAEN 112	C Programming or CPEN 201 C++ Programming 
+                                        <li/>CPEN 202	Introduction to Software Engineering or CPEN 407 Software Engineering
+                                        <li/>CPEN 203	Digital Circuits 
+                                        <li/>CPEN 202	Computer Systems Design or CPEN 302 Computer Systems Engineering 
+                                        <li/>CPEN 204	Data Structures and Algorithms 
+                                        <li/>CPEN 206	Linear Circuits 
+                                        <li/>CPEN 301	Signals and Systems
+                                        <li/>CPEN 303	Computer Architecture or CPEN 402 Advanced Computer Architecture
+                                        <li/>CPEN 304	Digital Signal Processing
+                                        <li/>CPEN 305	Computer Networks
+                                        <li/>CPEN 307	Operating Systems 
+                                        <li/>CENG 400	Independent Project 
+                                        <li/>CPEN 401	Control Systems Analysis and Design
+                                        <li/>CPEN 403	Embedded Systems or CPEN 413 Microprocessor Systems and Integration 
+                                        <li/>CPEN 405	CPEN 404 Computer Vision and Robotics   or Artificial Intelligence 
+                                        <li/>CPEN 406	Wireless Communication Systems
+
+                                    </ul>    
+                            </li>
+                        </ul>
+                        
 		</div>
 
 		<div class="tabcontent" id="tab_content_3">
-		<strong>Students Industrial Attachment</strong><BR><BR>
-         The department has over the years placed students in various industries for industrial attachmentvisited websites, jQuery is the most popular JavaScript library in use today.[2][3]
-			<br><br>
-			jQuery is free, open source software, dual-licensed under the MIT License and the GNU General Public License, Version 2.[4] jQuery's syntax is designed to make it easier to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications. jQuery also provides capabilities for developers to create plugins on top of the JavaScript library. Using these facilities, developers are able to create abstractions for low-level interaction and animation, advanced effects and high-level, theme-able widgets. This contributes to the creation of powerful and dynamic web pages.
-			<br><br>
-			Microsoft and Nokia have announced plans to bundle jQuery on their platforms,[5] Microsoft adopting it initially within Visual Studio[6] for use within Microsoft's ASP.NET AJAX framework and ASP.NET MVC Framework while Nokia has integrated it into their Web Run-Time widget development platform.[7] jQuery has also been used in MediaWiki since version 1.16.[8]
-		</div>
+
+
+
+		<strong>Curriculum Overview</strong><BR><BR>
+		The Department runs an intensive four-year program that culminates in a Bachelor 
+                of Science (BSc) degree in Computer Engineering with strong liberal arts background
+                The curriculum for the bachelor program broadly encompasses studies in hardware, 
+                software, computer systems and communication, which are essential in the design, analysis
+                , development, and application of computer and digital systems. The range of courses offered
+                equip students with knowledge and skill adequate to enable them specialize in the various 
+                areas of computer engineering at the department; software systems, communication networks,
+                hardware systems, and computer systems among others.  In addition to the technical courses
+                offered, students are also offered the opportunity to apply their knowledge to practical 
+                problems of industry through internship programs. The Department maintains a minimum requirement
+                of two internships (industrial practice) before graduation to strengthen the practical knowledge
+                and industrial exposure of students and to make them suitable for the industry and research. 
+                Seminar series are held at least twice a semester to offer students the opportunity to interact
+                with industrial experts.<br/><br/>
+                
+                <a style='color:blue; font-size: 15px;' href='undergradcourses.php'>Level 100</a>&nbsp;
+                <a style='color:blue; font-size: 15px;' href='undergradcourses.php'>Level 200</a>&nbsp;
+                <a style='color:blue; font-size: 15px;' href='undergradcourses.php'>Level 300</a>&nbsp;
+                <a style='color:blue; font-size: 15px;' href='undergradcourses.php'>Level 400</a><br/>
+	</div>
 			<div class="tabcontent" id="tab_content_4">
-		<strong>Facilities and Labs Available</strong><BR><BR> iare like amenities ing of HTML.[1] It was released in January 2006 at BarCamp NYC by John Resig. Used by over 43% of the 10,000 most visited websites, jQuery is the most popular JavaScript library in use today.[2][3]
-			<br><br>
-			jQuery is free, open source software, dual-licensed under the MIT License and the GNU General Public License, Version 2.[4] jQuery's syntax is designed to make it easier to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications. jQuery also provides capabilities for developers to create plugins on top of the JavaScript library. Using these facilities, developers are able to create abstractions for low-level interaction and animation, advanced effects and high-level, theme-able widgets. This contributes to the creation of powerful and dynamic web pages.
-			<br><br>
-			Microsoft and Nokia have announced plans to bundle jQuery on their platforms,[5] Microsoft adopting it initially within Visual Studio[6] for use within Microsoft's ASP.NET AJAX framework and ASP.NET MVC Framework while Nokia has integrated it into their Web Run-Time widget development platform.[7] jQuery has also been used in MediaWiki since version 1.16.[8]
+		<strong>Internship</strong><BR><BR>
+		To be filled
 		</div>
 		<div class="tabcontent" id="tab_content_5">
-			<strong>Student Exchange Program</strong><BR><BR> iare like amenities ing of HTML.[1] It was released in January 2006 at BarCamp NYC by John Resig. Used by over 43% of the 10,000 most visited websites, jQuery is the most popular JavaScript library in use today.[2][3]
-			<br><br>
-			jQuery is free, open source software, dual-licensed under the MIT License and the GNU General Public License, Version 2.[4] jQuery's syntax is designed to make it easier to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications. jQuery also provides capabilities for developers to create plugins on top of the JavaScript library. Using these facilities, developers are able to create abstractions for low-level interaction and animation, advanced effects and high-level, theme-able widgets. This contributes to the creation of powerful and dynamic web pages.
-			<br><br>
-			Microsoft and Nokia have announced plans to bundle jQuery on their platforms,[5] Microsoft adopting it initially within Visual Studio[6] for use within Microsoft's ASP.NET AJAX framework and ASP.NET MVC Framework while Nokia has integrated it into their Web Run-Time widget development platform.[7] jQuery has also been used in MediaWiki since version 1.16.[8]
+			<strong>Facilities</strong><BR><BR>
+			To be filled
 		</div>
 		<div class="tabcontent" id="tab_content_6">
-			<strong>Students Academic Advisors</strong><BR><BR> iare like amenities ing of HTML.[1] It was released in January 2006 at BarCamp NYC by John Resig. Used by over 43% of the 10,000 most visited websites, jQuery is the most popular JavaScript library in use today.[2][3]
-			<br><br>
-			jQuery is free, open source software, dual-licensed under the MIT License and the GNU General Public License, Version 2.[4] jQuery's syntax is designed to make it easier to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications. jQuery also provides capabilities for developers to create plugins on top of the JavaScript library. Using these facilities, developers are able to create abstractions for low-level interaction and animation, advanced effects and high-level, theme-able widgets. This contributes to the creation of powerful and dynamic web pages.
-			<br><br>
-			Microsoft and Nokia have announced plans to bundle jQuery on their platforms,[5] Microsoft adopting it initially within Visual Studio[6] for use within Microsoft's ASP.NET AJAX framework and ASP.NET MVC Framework while Nokia has integrated it into their Web Run-Time widget development platform.[7] jQuery has also been used in MediaWiki since version 1.16.[8]
+			<strong>Exchange Programmes</strong><BR><BR>
+			To be filled
 		</div>
 			<div class="tabcontent" id="tab_content_7">
-			<strong>Opportunities</strong><BR><BR> iare like amenities ing of HTML.[1] It was released in January 2006 at BarCamp NYC by John Resig. Used by over 43% of the 10,000 most visited websites, jQuery is the most popular JavaScript library in use today.[2][3]
-			<br><br>
-			jQuery is free, open source software, dual-licensed under the MIT License and the GNU General Public License, Version 2.[4] jQuery's syntax is designed to make it easier to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications. jQuery also provides capabilities for developers to create plugins on top of the JavaScript library. Using these facilities, developers are able to create abstractions for low-level interaction and animation, advanced effects and high-level, theme-able widgets. This contributes to the creation of powerful and dynamic web pages.
-			<br><br>
-			Microsoft and Nokia have announced plans to bundle jQuery on their platforms,[5] Microsoft adopting it initially within Visual Studio[6] for use within Microsoft's ASP.NET AJAX framework and ASP.NET MVC Framework while Nokia has integrated it into their Web Run-Time widget development platform.[7] jQuery has also been used in MediaWiki since version 1.16.[8]
+			<strong>Academic Advisors</strong><BR><BR>
+			To be filled
 		</div>
 			<div class="tabcontent" id="tab_content_8">
-			<strong>Award Scheme</strong><BR><BR> iare like amenities ing of HTML.[1] It was released in January 2006 at BarCamp NYC by John Resig. Used by over 43% of the 10,000 most visited websites, jQuery is the most popular JavaScript library in use today.[2][3]
-			<br><br>
-			jQuery is free, open source software, dual-licensed under the MIT License and the GNU General Public License, Version 2.[4] jQuery's syntax is designed to make it easier to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications. jQuery also provides capabilities for developers to create plugins on top of the JavaScript library. Using these facilities, developers are able to create abstractions for low-level interaction and animation, advanced effects and high-level, theme-able widgets. This contributes to the creation of powerful and dynamic web pages.
-			<br><br>
-			Microsoft and Nokia have announced plans to bundle jQuery on their platforms,[5] Microsoft adopting it initially within Visual Studio[6] for use within Microsoft's ASP.NET AJAX framework and ASP.NET MVC Framework while Nokia has integrated it into their Web Run-Time widget development platform.[7] jQuery has also been used in MediaWiki since version 1.16.[8]
+			<strong>Academic Calendar</strong><BR><BR>
+			<?
+                        $calendarViewer=new calendar();
+                        $calendarViewer->showCalendar();
+                        
+                        
+                        
+                        $tableTester = new tableGenerator('col', '');
+
+                        //for all students
+                        $firstRow = array('', "<a href='#'><b/>FIRST SEMESTER</a>", '');
+                        $secondRow = array('', "<a href='#'><b/>SECOND SEMESTER</a>", '');
+                        $tableData = array($firstRow, $secondRow);
+                        $tableTester->generateTable14(array('', '<b/>ACADEMIC CALENDAR', ''), $tableData);
+                        ?>
 		</div>
+			
 			<div class="tabcontent" id="tab_content_9">
-			<strong>Members</strong><BR><BR>
-			<h4><font color="#000080">L100 Department Students</font></h4>
-			<table border = "0" width = "690px" bgcolor="white">
-			 <tr>
-			 <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-             <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-            <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-            <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-              <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-             </tr>
-           	 <tr>
-			 <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-             <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-            <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-            <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-              <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-             </tr>
-              <tr>
-			 <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-             <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-            <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-            <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-             </tr>
-
-            </table>  <BR><BR>
-            	<h4><font color="#000080">L200 Department Students</font></h4>
-			<table border = "0" width = "690px" bgcolor="white">
-			 <tr>
-			 <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-             <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-            <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-              <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-                <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-             </tr>
-           	 <tr>
-			 <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-             <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-            <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-              <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-                <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-             </tr>
-              <tr>
-			 <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-             <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-            <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-             </tr>
-
-            </table>
-            <BR><BR>
-            	<h4><font color="#000080">L300 Department Students</font></h4>
-			<table border = "0" width = "690px" bgcolor="white">
-			 <tr>
-			 <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-             <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-            <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-              <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-                <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-             </tr>
-           	 <tr>
-			 <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-             <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-            <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-              <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-                <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-             </tr>
-              <tr>
-			 <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-             <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-            <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-             </tr>
-
-            </table>
-            <BR><BR>
-            	<h4><font color="#000080">Final Years</font></h4>
-			<table border = "0" width = "690px" bgcolor="white">
-			 <tr>
-			 <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-             <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-            <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-              <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-                <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-             </tr>
-           	 <tr>
-			 <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-             <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-            <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-              <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-                <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-             </tr>
-              <tr>
-			 <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-             <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-            <td  valign="top"> <img src = "../img/bg-black.png" ><BR>name<BR>email </td>
-             </tr>
-
-            </table>
+			<strong>Academic Awards</strong><BR><BR>
+			The Department has instituted annual award scheme to deserving graduating students. The current
+                        awards schemes are - TiGo award for best Computer Engineering graduating student, and SISCO award
+                        for best graduating project. To motivate female students and also encourage innovation in students
+                        , extension of the award scheme is under consideration to cover the different levels as well as 
+                        others disciplines within the Computer Engineering field.<br/><br/>
+                        
+                <a style='color:blue; font-size: 15px;' href='acadYrAward.php'>2007/2008</a>&nbsp;
+                <a style='color:blue; font-size: 15px;' href='acadYrAward.php'>2008/2009</a>&nbsp;
+                <a style='color:blue; font-size: 15px;' href='acadYrAward.php'>2009/2010</a>&nbsp;
+                <a style='color:blue; font-size: 15px;' href='acadYrAward.php'>2010/2011</a>&nbsp;               
+                <a style='color:blue; font-size: 15px;' href='acadYrAward.php'>2011/2012</a><br/>
 		</div>
-			<div class="tabcontent" id="tab_content_10">
-			<strong>Applications</strong><BR><BR> iare like amenities ing of HTML.[1] It was released in January 2006 at BarCamp NYC by John Resig. Used by over 43% of the 10,000 most visited websites, jQuery is the most popular JavaScript library in use today.[2][3]
-			<br><br>
-			jQuery is free, open source software, dual-licensed under the MIT License and the GNU General Public License, Version 2.[4] jQuery's syntax is designed to make it easier to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications. jQuery also provides capabilities for developers to create plugins on top of the JavaScript library. Using these facilities, developers are able to create abstractions for low-level interaction and animation, advanced effects and high-level, theme-able widgets. This contributes to the creation of powerful and dynamic web pages.
-			<br><br>
-			Microsoft and Nokia have announced plans to bundle jQuery on their platforms,[5] Microsoft adopting it initially within Visual Studio[6] for use within Microsoft's ASP.NET AJAX framework and ASP.NET MVC Framework while Nokia has integrated it into their Web Run-Time widget development platform.[7] jQuery has also been used in MediaWiki since version 1.16.[8]
+            
+            <div class="tabcontent" id="tab_content_10">
+			<strong>Opportunities</strong><BR><BR>
+			To be filled
+		</div>
+            <div class="tabcontent" id="tab_content_11">
+			<strong>Application Forms</strong><BR><BR>
+			To be filled
 		</div>
 	</div>
 </div>
