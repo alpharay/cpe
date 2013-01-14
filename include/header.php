@@ -101,7 +101,11 @@ jQuery(document).ready(function(){
 		interval:5000 // interval time between image change
 	});
 });
+<<<<<<< HEAD
 </script>
+=======
+</script>
+>>>>>>> ba243abf51692b748b524f76cc882af35799ea31
 <script type="text/javascript" src="../undergraduate/js/jquery-1.5.2.min.js"></script>
 
 

@@ -148,58 +148,22 @@ jQuery(function($){
         $MAINMENU=new MenuCreator();
         $MAINMENU->BuildMainMenu($mainMenuItems,'../Tools/menuCss.css');
 	?>
-<?php     
-$link = "../gallery/display.php";
-$galleryLink1=array('name'=>'Dinner','image'=>'../img/dinner_alt.png','link'=>$link,'linkImage'=>'../img/dinner.png');
-$galleryLink2=array('name'=>'Award','image'=>'../img/award_alt.png','link'=>$link,'linkImage'=>'../img/award.png');
-$galleryLink3=array('name'=>'Graduation','image'=>'../img/graduation_alt.png','link'=>$link,'linkImage'=>'../img/graduation.png');
-$galleryLink4=array('name'=>'Homecoming','image'=>'../img/homecoming_alt.png','link'=>$link,'linkImage'=>'../img/homecoming.png');
-$galleryLink5=array('name'=>'Student Presentations','image'=>'../img/stud_pres_alt.png','link'=>$link,'linkImage'=>'../img/stud_pres.png');
-$galleryLink6=array('name'=>'Examinations','image'=>'../img/exams_alt.png','link'=>$link,'linkImage'=>'../img/exams.png');
-$galleryLink7=array('name'=>'Seminars','image'=>'../img/seminars_alt.png','link'=>$link,'linkImage'=>'../img/seminars.png');
-//N.B: if extra galleryLinks need to be added in future as those on the previous lines
-//, the mosaic.css file in cpe/css/mosaic.css should be edited to accomodate this
-// change and to ensure that they reflect on the web page
-$album_name = "";
-$logo;
-$overlay;
-
-$galleryPanel=array($galleryLink1,$galleryLink2,$galleryLink3,$galleryLink4,$galleryLink5,$galleryLink6);
-//$galleryPanel=array($galleryLink1,$galleryLink2,$galleryLink3,$galleryLink4,$galleryLink5,$galleryLink6,$galleryLink7);
-
-$galleryPanelProcessor=new PictureProcessing();
-
-if ($_POST['album']) {
-	if ($_POST['album'] != "") {
-		$album_name = $_POST['album'];
-		$logo = $_FILES['logo'];
-		$overlay = $_FILES['overlay_logo'];
-		array_push($galleryPanel, array('name'=>$album_name,'image'=>'../img/'.$logo,'link'=>$link,'linkImage'=>'../img/'.$overlay));
+<?php
+	$link = "../gallery/display.php";
+	$tablename = 'gallery_link_array';
+	$dir = "../img/";
+	
+	$galleryPanelProcessor = new PictureProcessing();
+	
+	$result = mysql_query("SELECT * FROM $tablename;");
+	$galleryPanel = array();
+	while($row = mysql_fetch_array($result))
+	{
+		array_push($galleryPanel, array('name'=>$row['name'],'image'=>$dir . $row['linkImage'],'link'=>$link,'linkImage'=>$dir . $row['image']));
 		}
-	}
-
-$galleryPanelProcessor -> generatePicAndAlbumPanel($galleryPanel);
-
+	
+	$galleryPanelProcessor -> generatePicAndAlbumPanel($galleryPanel);
 ?>
-
-<div style="width: 987; margin: 20px auto;">
-<p><a class="modal" href="#"><img src="../img/create album.png" width="120" /></a></p>
-</div>
-
-<div id="contact">
-    <div id="close">Close</div>
-	<div id="upload_header">Create Album</div>
-    <p class="success">Thanks! Your Album has been created.</p>
-    
-    <form action="<?php $_PHP_SELF ?>" method="post" name="contactForm" id="contactForm" enctype="multipart/form-data">
-    <p><input type="text" name="album" id="name" value="Album Name" /></p>
-    <p><input type="file" name="logo" value="Upload Album Logo" /></p>
-    <p><input type="file" name="overlay_logo" value="Upload Album Overlay Logo" /></p>
-    <p><input type="submit" value="Create Album" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Cancel" />
-    </form>
-</div>
-
-<div id="mask"></div>
 
 </div>
 

@@ -18,8 +18,9 @@ class ConnectionToUG {
 //     const PASSWORD="!2jumpers";
 
      const USER="root";
-    // const PASSWORD="cyberdex";
-     const PASSWORD="hope";
+     const PASSWORD="";
+      //     const PASSWORD="";
+
      const DATABASE="compEngDb";
      private $connection;
      private $selected_db;

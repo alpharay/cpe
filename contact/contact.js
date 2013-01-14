@@ -11,6 +11,12 @@ $(function() {
 		$('form#contactForm').show();
 
 		// Reset all the default values in the form fields
+
+		$('#image').val('Your Image');
+		$('#album').val('Your Album Name');
+		$('#pic').val("Your Picture's Name");
+		$('#description').val('Enter your picture description ...');
+
 		$('#name').val("");
 		$('#email').val("");
 		$('#comment').val("");
@@ -41,7 +47,11 @@ $(function() {
 	$('input#submit').click(function() {
 	$('.error').hide().remove();
 		//Inputed Strings
-		var name = $('#name').val(),
+
+		var image = $('#image').val(),
+			album = $('#album').val(),
+			picture = $('#pic').val(),
+			name = $('#name').val(),
 			email = $('#email').val(),
 			comment = $('#comment').val();
 			
@@ -96,6 +106,7 @@ $(function() {
 						$('form#contactForm').fadeOut('slow');
 					}				
 				});*/
+				}
 			}
 			
 			else {
