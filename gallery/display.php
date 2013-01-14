@@ -212,18 +212,22 @@ $(document).ready(function() {
 					</div>
 					<div id="caption" class="caption-container"></div>
 				</div>
-<?php $galleryLink1=array('name'=>'Dinner','image'=>'../img/dinner_alt.png','link'=>'../xpoture/gallery.php','linkImage'=>'../img/dinner.png');
-	$galleryLink2=array('name'=>'Award','image'=>'../img/award_alt.png','link'=>'../gallery/display.php','linkImage'=>'../img/award.png');
-	$galleryLink3=array('name'=>'Graduation','image'=>'../img/graduation_alt.png','link'=>'../gallery/display.php','linkImage'=>'../img/graduation.png');
-	$galleryLink4=array('name'=>'Homecoming','image'=>'../img/homecoming_alt.png','link'=>'../gallery/display.php','linkImage'=>'../img/homecoming.png');
-	$galleryLink5=array('name'=>'Student Presentations','image'=>'../img/stud_pres_alt.png','link'=>'../gallery/display.php','linkImage'=>'../img/stud_pres.png');
-	$galleryLink6=array('name'=>'Examinations','image'=>'../img/exams_alt.png','link'=>'../gallery/display.php','linkImage'=>'../img/exams.png');
-	$galleryLink7=array('name'=>'Test','image'=>'Test','link'=>'../gallery/display.php','linkImage'=>'../img/seminars.gif');
-	
-	$album = array($galleryLink1,$galleryLink2,$galleryLink3,$galleryLink4,$galleryLink5,$galleryLink6);
-	
-	$albumPics = new PictureProcessing();
-	$albumPics -> getAlbumImages($album);
+                
+				<?php
+                    $link = "../gallery/display.php";
+                    
+                    $galleryLink1=array('name'=>'Dinner','image'=>'../img/dinner_alt.png','link'=>$link,'linkImage'=>'../img/dinner.png');
+                    $galleryLink2=array('name'=>'Award','image'=>'../img/award_alt.png','link'=>$link,'linkImage'=>'../img/award.png');
+                    $galleryLink3=array('name'=>'Graduation','image'=>'../img/graduation_alt.png','link'=>$link,'linkImage'=>'../img/graduation.png');
+                    $galleryLink4=array('name'=>'Homecoming','image'=>'../img/homecoming_alt.png','link'=>$link,'linkImage'=>'../img/homecoming.png');
+                    $galleryLink5=array('name'=>'Student Presentations','image'=>'../img/stud_pres_alt.png','link'=>$link,'linkImage'=>'../img/stud_pres.png');
+                    $galleryLink6=array('name'=>'Examinations','image'=>'../img/exams_alt.png','link'=>$link,'linkImage'=>'../img/exams.png');
+                    $galleryLink7=array('name'=>'Test','image'=>'Test','link'=>$link,'linkImage'=>'../img/seminars.gif');
+                    
+                    $album = array($galleryLink1, $galleryLink2, $galleryLink3, $galleryLink4, $galleryLink5, $galleryLink6);
+                    
+                    $albumPics = new PictureProcessing();
+                    $albumPics -> getAlbumImages($album);
                 ?>
 				<div style="clear: both;"></div>
 			</div>

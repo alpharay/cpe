@@ -45,7 +45,7 @@ $(function() {
 		var image = $('#image').val(),
 			album = $('#album').val(),
 			picture = $('#pic').val(),
-		var name = $('#name').val(),
+			name = $('#name').val(),
 			email = $('#email').val(),
 			comment = $('#comment').val();
 			
@@ -103,6 +103,7 @@ $(function() {
 						$('form#contactForm').fadeOut('slow');
 					}				
 				});*/
+				}
 			}
 			
 			else {

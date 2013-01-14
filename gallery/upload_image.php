@@ -20,8 +20,6 @@
 
 <p><a class="modal" href="#"><img src="upload_button.jpg" width="120" /></a></p><br />
 
-<p><a class="modal1" href="#"><img src="../img/create album.png" width="120" /></a></p>
-
 </div><!--end container-->
 
 <div id="contact">
@@ -41,24 +39,6 @@
 </div>
 
 <div id="mask"></div>
-
-<div id="create_album">
-    <div id="close">Close</div>
-	<div id="album_create_header">Create Album</div>
-    <p class="success">Thanks! Your Album has been created.</p>
-    
-    <div style="height:100;"></div>
-    <form action="create_album.php" method="post" name="contactForm" id="contactForm" enctype="multipart/form-data">
-    <p><input type="text" name="album" id="name" value="Album Name" /></p>
-    <p><input type="file" name="logo" value="Upload Album Logo" /></p>
-    <p><input type="file" name="overlay_logo" value="Upload Album Overlay Logo" /></p>
-    <p><input type="submit" value="Create Album" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Cancel" />
-    </form>
-</div>
-
-<div id="mask"></div>
-
-<!--end contact form-->
 
 </body>
 </html>
