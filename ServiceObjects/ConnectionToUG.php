@@ -16,6 +16,7 @@ class ConnectionToUG {
      const SERVER="localhost";
 //     const USER="lnrdefusr";
 //     const PASSWORD="!2jumpers";
+
      const USER="root";
     // const PASSWORD="cyberdex";
      const PASSWORD="hope";

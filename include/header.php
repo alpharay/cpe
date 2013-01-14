@@ -102,7 +102,7 @@ jQuery(document).ready(function(){
 	});
 });
 </script>
-<script type="text/javascript" src="undergraduate/js/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="../undergraduate/js/jquery-1.5.2.min.js"></script>
 
 
 <script language="JavaScript">

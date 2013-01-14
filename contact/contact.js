@@ -51,6 +51,7 @@ $(function() {
 		//Regex Strings
 		var username_regex = /^[A-Za-z0-9 _ .-]{4,16}$/,
 			email_regex = /^\S+\S+\.[A-Za-z]{2,4}$/;
+			// /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$ /
 		
 			//Test Username
 			if(!username_regex.test(name)) {

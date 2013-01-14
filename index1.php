@@ -2,8 +2,8 @@
 <HTML>
 <HEAD
     <?php
-require_once('header.php');
-?>
+	require_once('header.php');
+	?>
 
  <TITLE>Computer Engineering</TITLE>
 

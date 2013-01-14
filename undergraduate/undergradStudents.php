@@ -14,23 +14,26 @@ and open the template in the editor.
             <?php require_once '../Tools/topNavigationMenu.php';
 
             $result=mysql_query("SELECT `surName`, `otherNames`, `emailAddress`, `hall`, `yearGroup`, `studLevel` FROM `student` ORDER BY `surName`");
-
             //this function gets students according to their level
             function getStudents($queryResult, $level)
             {
-                $tableData = array();
-                while($row=mysql_fetch_array($queryResult))
-                {
-                    if ($row['studLevel']==$level)
-                    {
-                        $surname=$row['surName'];
-                        $otherNames=$row['otherNames'];
-                        $emailAddress=$row['emailAddress'];
-                        $fillRow = array($surname, $otherNames, $emailAddress);
-                        array_push($tableData,$fillRow);
-                    }
-                }
-                return $tableData;
+				if(mysql_num_rows($queryResult)>0)
+				{
+					$tableData = array();
+					while($row=mysql_fetch_array($queryResult))
+					{
+						if ($row['studLevel']==$level)
+						{
+							$surname=$row['surName'];
+							$otherNames=$row['otherNames'];
+							$emailAddress=$row['emailAddress'];
+							$fillRow = array($surname, $otherNames, $emailAddress);
+							array_push($tableData,$fillRow);
+						}
+					}
+					mysql_data_seek($queryResult,0);
+					return $tableData;
+				}
             }
             ?>  
             
@@ -69,7 +72,7 @@ and open the template in the editor.
 
                         //$tableData = array($firstRow,$secondRow);
                         $tableTester->generateTable15(array('Surname', 'Other Names','Email'), getStudents($result,100));
-                        mysql_data_seek($result,0);
+                        
                         ?>
                         <BR><BR>
  		</div>
@@ -93,7 +96,7 @@ and open the template in the editor.
             }*/
 
             $tableTester->generateTable15(array('Surname', 'Other Names','Email'), getStudents($result,200));
-            mysql_data_seek($result,0);
+            
                         ?>
             <BR><BR>
 		</div>
@@ -103,7 +106,7 @@ and open the template in the editor.
             <h4><font color="#000080">L300 Students</font></h4>
             <?php
             $tableTester->generateTable15(array('Surname', 'Other Names','Email'), getStudents($result,300));
-            mysql_data_seek($result,0);
+            
                         ?>
             <BR><BR>			
 	</div>
